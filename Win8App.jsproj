@@ -509,6 +509,7 @@
     <Content Include="settings\html\register.html" />
     <Content Include="settings\js\register.js" />
     <Content Include="settings\js\history.js" />
+    <Content Include="Win8AppGrundgerüst.licenseheader" />
     <None Include="Win8App_StoreKey.pfx" />
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="pages\directoryView\directoryView.css" />
