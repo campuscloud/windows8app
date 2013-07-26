@@ -1,0 +1,37 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>General flyout</title>
+        <script src="/settings/js/general.js"></script>
+        <link href="general.css" rel="stylesheet" />
+        <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- BEGINSETTINGSFLYOUT -->
+        <div data-win-control="WinJS.UI.SettingsFlyout" id="programmaticInvocationSettingsFlyout" aria-label="App Settings Flyout" data-win-options="{settingsCommandId:'general',width:'narrow'}">
+            <!-- Use either 'win-ui-light' or 'win-ui-dark' depending on the contrast between the header title and background color -->
+            <div class="win-ui-light win-header" style="background-color:#009DD1; color: white;">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton" id="leaveSetting"></button>
+                <div class="win-label" lang="GENERAL">Allgemein</div> 
+                
+            </div>
+            <div class="win-content" style="width: 100%;">
+                <div class="win-settings-section">
+                    <h2  lang="LANGUAGE">Sprache</h2>
+                    <select id="languageSelection">
+                        <option value="1">Deutsch</option>
+                        <option value="2">English</option>
+                    </select>
+                    <br /><br />
+                    
+                    <input id="autoscrollCheckbox" type="checkbox" name="Autoscroll" value="Autoscroll" /> Autoscroll
+
+                     <br /><br /><br />
+
+                    <button id="resetButton" lang="RESET">App zurücksetzen</button>
+                </div>
+            </div>
+        </div>
+        <!-- ENDSETTINGSFLYOUT -->
+    </body>
+</html>

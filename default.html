@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Campus Cloud</title>
+
+    <!-- WinJS-Verweise -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+
+    <!-- Load dependent modules -->
+    <script src="lib/config/config.js"></script>
+    <script src="lib/js/logic/helper.js"></script>
+    <script src="lib/js/logic/translator.js"></script>
+    <script src="lib/js/logic/keyboard.js"></script>
+    <script src="lib/js/lang/de-de.js"></script>
+    <script src="lib/js/lang/en-us.js"></script>
+
+     <!--Load Interfaces -->
+    <script src="lib/js/interface/interface.js"></script>
+    <script src="lib/js/interface/backendInterface.js"></script>
+    <script src="lib/js/interface/backendDummy.js"></script>
+    <script src="lib/js/interface/backendOwncloud.js"></script>
+    <script src="lib/js/interface/backendSharepoint.js"></script>
+    <script src="lib/js/interface/frontendInterface.js"></script>
+    <script src="lib/js/interface/frontendDummy.js"></script>
+    <script src="lib/js/interface/frontendProduction.js"></script>
+
+    <!-- Win8App references -->
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/default.js"></script>
+    <script src="js/appWindows.js"></script>
+    <script src="js/navigator.js"></script>
+
+    <!-- Weitere Plugins -->
+    <script src="lib/js/plugins/jquery-2.0.0.js"></script>
+    <script src="lib/js/plugins/webdav.js"></script>
+    <script src="lib/js/plugins/base64.js"></script>
+    <script src="lib/js/plugins/pdfjs/pdf.js"></script>
+    <script src="lib/js/plugins/pdfjs/generic/web/compatibility.js"></script>
+    <script src="lib/js/plugins/jquery.dateFormat-1.0.js"></script>
+    <script src="lib/js/plugins/jquery.scrollTo-1.4.3.1.js"></script>    
+    
+    <!-- Code Mirror Preview-->
+    <script src="lib/js/plugins/codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="lib/js/plugins/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="lib/js/plugins/codemirror/theme/monokai.css">
+    <script src="lib/js/plugins/codemirror/mode/css/css.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/diff/diff.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/haskell/haskell.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/lua/lua.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/pascal/pascal.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/perl/perl.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/php/php.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/python/python.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/r/r.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/ruby/ruby.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/scheme/scheme.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/smalltalk/smalltalk.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/sql/sql.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/stex/stex.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/vb/vb.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/vbscript/vbscript.js"></script>
+    <script src="lib/js/plugins/codemirror/mode/xml/xml.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
+
+    <script>
+        $(document).ready(function () {
+
+        });
+        cloud.getSystemLanguage();
+
+        //cloud.functions.resetSettings();
+    </script>
+</body>
+</html>
